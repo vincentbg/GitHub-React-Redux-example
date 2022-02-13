@@ -1,9 +1,9 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import repoReducer from "../features/repo/repoSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    repo: repoReducer,
   },
 });
 

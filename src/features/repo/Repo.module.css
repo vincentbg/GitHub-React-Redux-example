@@ -1,3 +1,18 @@
+.tableWrapper {
+  position: relative;
+}
+.tableScroll {
+  position: absolute;
+  height: 23rem;
+  overflow-y: auto;
+  width: 48rem;
+  overflow-x: hidden;
+  display: grid !important;
+  margin: 2rem !important;
+}
+.test {
+  font: bold !important;
+}
 .row {
   display: flex;
   align-items: center;
@@ -18,13 +33,13 @@
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 2px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .button {
   appearance: none;
   background: none;
-  font-size: 32px;
+  font-size: 15px;
   padding-left: 12px;
   padding-right: 12px;
   outline: none;
@@ -35,14 +50,16 @@
   background-color: rgba(112, 76, 182, 0.1);
   border-radius: 2px;
   transition: all 0.15s;
+  margin-right: 2rem;
 }
 
 .textbox {
-  font-size: 32px;
+  font-size: 15px;
   padding: 2px;
-  width: 64px;
+  width: 10rem;
   text-align: center;
   margin-right: 4px;
+  margin: 1rem;
 }
 
 .button:hover,
@@ -54,13 +71,7 @@
   background-color: rgba(112, 76, 182, 0.2);
 }
 
-.asyncButton {
-  composes: button;
-  position: relative;
-}
-
 .asyncButton:after {
-  content: '';
   background-color: rgba(112, 76, 182, 0.15);
   display: block;
   position: absolute;
@@ -76,4 +87,34 @@
   width: 0%;
   opacity: 1;
   transition: 0s;
+}
+table {
+  width: 100vw;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.loaderWrapper {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ContributorMainContent {
+  display: flex;
+  justify-content: center;
 }
